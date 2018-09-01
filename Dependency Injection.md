@@ -36,7 +36,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
 public class BinarySearchImpl {
 	
 	public int search(int[] arr) {
@@ -53,7 +52,6 @@ package com.delete;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class BubbleSort {
 
 	public void sort() {
@@ -86,7 +84,6 @@ package com.delete;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class QuickSort implements ISortingAlgorithm {
 
 	public void sort() {
@@ -101,7 +98,6 @@ package com.delete;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class BubbleSort implements ISortingAlgorithm {
 
 	public void sort() {
@@ -171,6 +167,7 @@ In console:
 **Conclusion**
 - BinarySearchImpl is become loosly coupled. And it supports any type of sorting algorithm.
 - **Dependency injection** happening through Constructor. To make class become loosely coupled.
+
 **Limitations**
 - In main method we are creating the objects for BinarySearchImpl, QuickSort.
 - Is their a way so that we can avoid the creating the objects.
