@@ -170,7 +170,11 @@ For the iltering-list we are including field2, field3.
 
 how do we store data from objects to tables ?. 
 Object Relational Mapping (ORM) is a functionality which is used to develop and maintain a relationship between an object and relational database by mapping an object state to database column.
- 
+
+![screenshot from 2018-09-01 11-11-53](https://user-images.githubusercontent.com/15109557/44942847-8aeb0780-add8-11e8-9c17-8aebfee5a1f0.png)
+
+
+
  ```java
  public class Task {
 	 private int id;
