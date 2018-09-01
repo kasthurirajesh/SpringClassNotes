@@ -163,11 +163,15 @@ public class DeleteApplication {
 **When we run the application, output as follows**
 
 In console:
+
       quick sort
       3
 
 **Conclusion**
-- BinarySearchImpl is become loosly coupled.
+- BinarySearchImpl is become loosly coupled. And it supports any type of sorting algorithm.
+**Limitations**
+- In main method we are creating the objects for BinarySearchImpl, QuickSort.
+- Is their a way so that we can avoid the creating the objects.
 
 
 
