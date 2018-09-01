@@ -173,15 +173,35 @@ Object Relational Mapping (ORM) is a functionality which is used to develop and 
 
 ![screenshot from 2018-09-01 11-11-53](https://user-images.githubusercontent.com/15109557/44942847-8aeb0780-add8-11e8-9c17-8aebfee5a1f0.png)
 
+JPA will convert classes to tables using the Entities, Relationships, entity manager.
+
+**Example 1**
+Task class below is mapped to task class.However, there are mismatches in cloumn names. We use jpa annotations to do the mapping.
+- @Table(name = "Task")
+- @Id
+- @GeneratedValue
+- @Column(name = "description")
+
+
+
 
 
  ```java
+ @Entity
+ @Table(name = "Task")
  public class Task {
+         @Id
+	 @GeneratedValue
 	 private int id;
+	 
+	 @Column(name = "description")
 	 private  String desc;
+	 
+	 @Column(name = "target_date")
 	 private Date targetDate;
+	 
+	 @Column(name = "is_done")
 	 private boolean isDone;
-	 private List<Employee> employees; 
 }
 ```
 ```sql
