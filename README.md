@@ -180,11 +180,7 @@ Task class below is mapped to task class.However, there are mismatches in cloumn
 - @Table(name = "Task")
 - @Id
 - @GeneratedValue
-- @Column(name = "description")
-
-
-
-
+- @Column(name = "description")  [ class variable as "desc"  but table column "description" : to map them use use @coumn  ] 
 
  ```java
  @Entity
