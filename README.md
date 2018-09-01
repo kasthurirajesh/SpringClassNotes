@@ -165,7 +165,21 @@ public class FilteringController {
 For the filtering URL we are including field1, field2.  
 For the iltering-list we are including field2, field3.  
 
-
+## what is jpa is trying to solve?
+ we are using java, data is present in **objects** but we want to store the data in database **tables**.
+ how do we store data from objects to tables ?. Object Relational Mapping (ORM) is a functionality which is used to develop and maintain a relationship between an object and relational database by mapping an object state to database column.
+ 
+ ```java
+ public class Task {
+	 private int id;
+	 private  String desc;
+	 private Date targetDate;
+	 private boolean isDone;
+	 private List<Employee> employees; 
+}
+```
+ 
+ 
 
 
 
